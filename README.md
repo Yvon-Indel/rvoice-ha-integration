@@ -18,8 +18,7 @@ This is the Home Assistant integration for using with the [rvoice-mqtt-gateway](
    
  - Create a subdirectory mqtt_rvoice 
  
- - Copy all the file in
-   \config\custom_components\mqtt_rvoice
+ - Copy ***\_\_init\_\_i.py, manifest.json*** and ***services.yaml*** in \config\custom_components\mqtt_rvoice
 
 #### Add integration in configuration.yaml
 Add this to the file configuration.yaml:
