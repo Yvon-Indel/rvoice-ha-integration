@@ -14,8 +14,10 @@ This is the Home Assistant integration for using with the [rvoice-mqtt-gateway](
 #### Copy files in config directory
  - Go to your HA custom components directory: \config\custom_components
  If it's your first custom componenet, you have to create this
-   directory.    
+   directory. 
+   
  - Create a subdirectory mqtt_rvoice 
+ 
  - Copy all the file in
    \config\custom_components\mqtt_rvoice
 
@@ -35,6 +37,7 @@ In both case, it's time to **restart Home Assistant**
  
 ## How it work
 The integration create a service called ***mqtt_rvoice.play***
+
  - This service send a mqtt message on the TOPIC_PUB with the message
     you want to tts as payload.
  - The service get back a mqtt message on
@@ -52,11 +55,15 @@ The integration create also **4 sensors** :
 
 ## How to use
 ### Testing
+
 You can test the integration in the Developer Tools :
  - select ***mqtt_rvoice.play*** as service
+ 
  - select ***a media player*** of your choice as entity
+ 
  - add a message to speak :
     message: 'C''est super, ça fonctionne'
+    
  - set the volume:
     volume: 0.5
 
@@ -76,7 +83,7 @@ Here is an exemple of an automation playing aa message when my 3d print is over.
                   minutes: 1    
               action:
               - service: mqtt_rvoice.play
-                data_template:
+                data:
                   entity_id: media_player.veranda
                   message: "Attention, l'impression 3 dé est terminée, je répète: l'impression 3 dé est terminée."
                   volume: 0.6
