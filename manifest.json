@@ -1,0 +1,8 @@
+{
+  "domain": "mqtt_rvoice",
+  "name": "Mqtt Responsive Voice",
+  "documentation": "https://github.com/Yvon-Indel/custom_components/mqtt_rvoice",
+  "issue_tracker": "https://github.com/Yvon-Indel/custom_components/mqtt_rvoice/issues",
+  "dependencies": ["mqtt"],
+  "codeowners": ["@yvon_indel"]
+}

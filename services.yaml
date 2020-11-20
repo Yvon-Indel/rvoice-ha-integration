@@ -1,0 +1,12 @@
+play:
+  description: Play TTS with Responsive Voice services (https://responsivevoice.org/)
+  fields:
+      entity_id:
+        description: Name(s) of the entities for playing the tts message
+        example: "media_player.cuisine"
+      message:
+        description: Message you want to play
+        example: "Hello, it's time to wake up"  
+      volume:
+        description: Volume of the player (from 0 to 1)
+        example: "0.5"          
